@@ -383,6 +383,20 @@
     <!-- ====================================================================== -->
     <dependencyManagement>
         <dependencies>
+        
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient-osgi -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient-osgi</artifactId>
+            <version>4.5.3</version>
+        </dependency>
+		<!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore -->
+		<dependency>
+		    <groupId>org.apache.httpcomponents</groupId>
+		    <artifactId>httpcore</artifactId>
+		    <version>4.4.6</version>
+		</dependency>
+        
             <!-- OSGi Dependencies -->
             <dependency>
                 <groupId>org.apache.felix</groupId>
