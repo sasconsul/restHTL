@@ -1,51 +1,20 @@
 package com.community.rest.core;
  
-import com.adobe.cq.sightly.WCMUsePojo;
-import com.day.cq.search.PredicateGroup;
-import com.day.cq.search.Query;
-import com.day.cq.search.QueryBuilder;
-import com.day.cq.search.result.SearchResult;
-import com.day.cq.tagging.Tag;
-import com.day.cq.tagging.TagManager;
-     
-import com.community.rest.core.HeroTextBean;
-    
-   
-import java.util.ArrayList;
-import java.util.LinkedHashMap;
-import java.util.List;
-     
 import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
-    
-    
-   
+import java.io.StringReader ;
+
 import javax.jcr.Node;
-import javax.jcr.Session;
-     
-  
-import org.apache.sling.api.resource.Resource;
-import org.apache.sling.api.resource.ResourceResolver;
-import org.apache.sling.api.resource.ValueMap;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-   
-   
-import org.apache.http.client.methods.HttpGet;  
-import com.google.gson.Gson;
-import com.google.gson.JsonParser;
-import com.google.gson.stream.JsonReader;
+
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
-  
-import java.io.StringReader ;
-import java.io.StringWriter;
-  
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import com.adobe.cq.sightly.WCMUsePojo;
+import com.google.gson.Gson;
+import com.google.gson.stream.JsonReader;
   
     
 public class HeroRestComponent
